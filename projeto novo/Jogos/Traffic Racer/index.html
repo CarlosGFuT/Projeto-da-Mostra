@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Configuração de codificação de caracteres -->
+    <meta charset="UTF-8">
+    <!-- Configuração de Tela -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página -->
+    <title>Traffic racer</title>
+    <!-- Link para o arquivo de estilo CSS -->
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Div para mostrar instruções de controle -->
+    <div id="help">
+        <p>Controles: teclas de seta para direita, <br> esquerda,cima e baixo.</p>
+    </div>
+    <!-- Div para exibir a pontuação -->
+    <div id="score_div">
+        Score: <span id="score">0</span>
+    </div>
+    <!-- Contêiner principal do jogo -->
+    <div id="container">
+        <!-- Linha 1 -->
+        <div id="line_1" class="line"></div>
+        <!-- Linha 2 -->
+        <div id="line_2" class="line"></div>
+        <!-- Linha 3 -->
+        <div id="line_3" class="line"></div>
+        <!-- Carro do jogador -->
+        <div id="car" class="car">
+            <!-- Componentes do carro -->
+            <div class="f_glass"></div>
+            <div class="b_glass"></div>
+            <div class="f_light_l"></div>
+            <div class="f_light_r"></div>
+            <div class="f_tyre_l"></div>
+            <div class="f_tyre_r"></div>
+            <div class="b_tyre_l"></div>
+            <div class="b_tyre_r"></div>
+        </div>
+        <!-- Carro 1 -->
+        <div id="car_1" class="car">
+            <!-- Componentes do carro -->
+            <div class="f_glass"></div>
+            <div class="b_glass"></div>
+            <div class="f_light_l"></div>
+            <div class="f_light_r"></div>
+            <div class="f_tyre_l"></div>
+            <div class="f_tyre_r"></div>
+            <div class="b_tyre_l"></div>
+            <div class="b_tyre_r"></div>
+        </div>
+        <!-- Carro 2 -->
+        <div id="car_2" class="car">
+            <!-- Componentes do carro -->
+            <div class="f_glass"></div>
+            <div class="b_glass"></div>
+            <div class="f_light_l"></div>
+            <div class="f_light_r"></div>
+            <div class="f_tyre_l"></div>
+            <div class="f_tyre_r"></div>
+            <div class="b_tyre_l"></div>
+            <div class="b_tyre_r"></div>
+        </div>
+        <!-- Carro 3 -->
+        <div id="car_3" class="car">
+            <!-- Componentes do carro -->
+            <div class="f_glass"></div>
+            <div class="b_glass"></div>
+            <div class="f_light_l"></div>
+            <div class="f_light_r"></div>
+            <div class="f_tyre_l"></div>
+            <div class="f_tyre_r"></div>
+            <div class="b_tyre_l"></div>
+            <div class="b_tyre_r"></div>
+        </div>
+        <!-- Div para reiniciar o jogo -->
+        <div id="restart_div">
+            <button id="restart">
+                Reiniciar<br>
+                <small class="small_text">(press Enter)</small>
+            </button>
+        </div>
+    </div>
+
+    <!-- Script para carregar a biblioteca jQuery -->
+    <!--<script src="jquery.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Script principal do jogo -->
+    <script src="script.js"></script>
+</body>
+

@@ -1,0 +1,680 @@
+/*importa uma fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Space+Grotesk&display=swap');
+
+@font-face {
+  font-family: 'Nixie';
+  src: url('Font/nixie/NixieOne.ttf') ;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'ChampagneL';
+  src: url('Font/champagne/ChampagneLimousines.ttf') ;
+  font-weight: normal;
+}
+
+::-webkit-scrollbar{
+  width: 3px;
+}
+
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--cor1);
+  border-radius: 5px;
+}
+
+
+/*ÃŠ uma variavel para armazenar os dados*/
+:root{
+  --font1:'Bruno Ace SC', cursive;
+  --font2:'Space Grotesk', sans-serif;
+  --font3: 'ChampagneL';
+  --font4: 'Nixie';
+
+  --cor1:#FFFFFF;
+  --cor2:#009DDC;
+  --cor3:#076895;
+  --cor4:#0D324D;
+  --cor5:#020202;
+  --cortransparente: rgba(0, 0, 0, 0.3); /* fundo transparente */;
+}
+
+/*Codigo global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
+}
+
+body{
+    background-color: var(--cor3);
+}
+
+/*Cabeçalho da Página*/
+header{
+  background-color: var(--cortransparente);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.navbar > .logo > a{
+    color: var(--cor1);
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 2rem;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+}
+
+.menu > li{
+    margin: 0 1rem;
+}
+
+.menu a {
+    color:  var(--cor1);
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu a:hover {
+    background-color: var(--cor1);
+    color: var(--cor3);
+  }
+  /*Fim Cabeçalho*/
+
+  .div-one{
+    width: 100%;
+    height: 90vh;
+  }
+
+  .div-one h2{
+    Color: var(--cor1);
+    font-size: 2.7rem;
+    font-family: var(--font2);
+    padding: 5px 0px 5px 0px;
+  }
+
+  .div-one p{
+    color:  var(--cor5);
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .div-one button{
+        background-color: transparent;
+        border: 0.125em solid var(--cor1);
+        border-radius: 0.9375em;
+        cursor: pointer;
+        font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: normal;
+        margin: 10px 0px;
+        outline: none;
+        padding: 1em 1em;
+        text-align: center;
+        text-decoration: none;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+       }
+
+    .div-one button a{
+        color: var(--cor5);
+        padding: 2em 4em;
+       }
+
+    .div-one button:hover{
+        background-color: var(--cor1);
+        padding: 1.1em;
+    }
+
+    .div-one button a:hover{
+        color: var(--cor4);
+    }
+
+  .div-one > .conteudodiv-one {
+    position: absolute;
+    top: 23%;
+    left: 7%;
+    width: 530px;
+    height: 300px;
+  }
+
+  .div-two{
+    width: 100%;
+    height: 200vh;
+  }
+
+  .div-two h2{
+    Color: var(--cor1);
+    font-size: 1.6rem;
+    font-family: var(--font2);
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+  }
+
+  .div-two h3{
+    Color: var(--cor1);
+    font-size: 1.1rem;
+    font-family: var(--font2);
+    padding: 0px 10px;
+  }
+
+
+  .div-two p{
+    color:  var(--cor5);
+    font-size: 16px;
+    text-align: justify;
+    padding: 10px;
+  }
+
+  .div-two span{
+    color: var(--cor1);
+  }
+
+  .cards{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    columns: 2;
+  }
+
+  .card{
+    background-color: #5180A2;
+    height: 23em;
+    width: 13em;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 1px 1px 10px black;
+    margin: auto;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  }
+
+  .card:hover{
+    opacity: 0.7;
+  }
+
+  .card .FotoPerfil{
+    background-color: var(--cor1);
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: 10px 55px;
+  }
+
+
+  /* Saboia -----------------------------------------------------------------------------------------------------------*/
+  #Saboia{
+    border-top: 10px solid #B80025 ;
+  }
+
+  #Saboia p{
+    font-size: 14px;
+  }
+
+  #Saboia h4{
+    color: #B80025;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  #Saboia h5{
+    color: #B80025;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  #Saboia .FotoPerfil{
+    background-image: url(ImagensEquipe/Saboia.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Isaac ------------------------------------------------------------------------------------------------------------*/
+  #Isaac{
+    border-top: 10px solid #CBFF8C ;
+  }
+
+  
+  #Isaac p{
+    font-size: 14px;
+  }
+
+  #Isaac h4{
+    color: #CBFF8C;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  #Isaac h5{
+    color: #CBFF8C;
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  #Isaac .FotoPerfil{
+    background-image: url(ImagensEquipe/Isaac.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Miguel Preto -----------------------------------------------------------------------------------------------------*/
+  #MiguelF{
+    border-top: 10px solid #A44200 ;
+  }
+
+  #MiguelF p{
+    font-size: 14px;
+  }
+
+  #MiguelF h4{
+    color: #A44200;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  #MiguelF h5{
+    color: #A44200;
+    text-align: center;
+    font-size: 12px;
+  }
+  
+
+  #MiguelF .FotoPerfil{
+    background-image: url(ImagensEquipe/MiguelF.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Joao Lucas -------------------------------------------------------------------------------------------------------*/
+  #JoaoL{
+    border-top: 10px solid #EBA97F ;
+  }
+
+  #JoaoL p{
+    font-size: 14px;
+  }
+
+  #JoaoL h4{
+    color: #EBA97F;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  #JoaoL h5{
+    color: #EBA97F;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  #JoaoL .FotoPerfil{
+    background-image: url(ImagensEquipe/JoaoL.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Pedro Luiz -------------------------------------------------------------------------------------------------------*/
+  #PedroL{
+    border-top: 10px solid #0B5D1E;
+  }
+
+  #PedroL p{
+    font-size: 14px;
+  }
+
+  #PedroL h4{
+    color: #0B5D1E;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  #PedroL h5{
+    color: #0B5D1E;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  #PedroL .FotoPerfil{
+    background-image: url(ImagensEquipe/PedroL.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Carlos -----------------------------------------------------------------------------------------------------------*/
+  #Carlos{
+    border-top: 10px solid #88CCF1 ;
+  }
+
+  #Carlos p{
+    font-size: 14px;
+  }
+
+  #Carlos h4{
+    color: #88CCF1;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  #Carlos h5{
+    color: #88CCF1;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  #Carlos .FotoPerfil{
+    background-image: url(ImagensEquipe/);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Miguel Lima ------------------------------------------------------------------------------------------------------*/
+  #MiguelL{
+    border-top: 10px solid #FFFB46;
+  }
+
+  
+  #MiguelL p{
+    font-size: 14px;
+  }
+
+  #MiguelL h4{
+    color: #FFFB46;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  #MiguelL h5{
+    color: #FFFB46;
+    text-align: center;
+    font-size: 12px;
+  }
+
+    
+  #MiguelL .FotoPerfil{
+    background-image: url(ImagensEquipe/MiguelL.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  footer{
+    background-color: var(--cor4);
+    height: 40vh;
+    width: 100%;
+  }
+
+  footer .logos{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  footer .logos > .logo-footer{
+    height: 4em;
+    width: 4em;
+    border-radius: 100%;
+  }
+
+  footer .logos > .logo-footer:hover{
+    opacity: 0.7;
+  }
+
+  #Fa-Facebook{
+    background-image: url(Img/Icones/Facebook/facebook-colorido.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #Fa-Twitter{
+    background-image:  url(Img/Icones/Twitter/X-colorido.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #Fa-Instagram{
+    background-image:  url(Img/Icones/Instagram/instagram-colorido.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #Fa-Youtube{
+    background-image:  url(Img/Icones/Youtube/YT-colorido.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .link-footer{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .link-footer a{
+    color: var(--cor1);
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  }
+
+  .link-footer a:hover{
+    color: var(--cor5);
+  }
+
+  .Copy{
+    background-color: #071a27;
+    color: var(--cor1);
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Quadrados{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .Quadrado1, .Quadrado2, .Quadrado3{
+    width: 300px;
+    height: 430px;
+    background-color: var(--cor4);
+    transition: .3s;
+  }
+  
+  .Quadrado1 .Quadrado-img{
+    background-image: url(Img/BannerJogos/tetris.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 150px;
+    margin: 1em 1em;
+  }
+
+  .Quadrado1 h2{
+    Color: var(--cor1);
+    font-size: 1.6rem;
+    font-family: var(--font2);
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+  }
+
+  .Quadrado1 p{
+    color:  var(--cor1);
+    font-size: 16px;
+    text-align: justify;
+    padding: 10px;
+  }
+
+  .Quadrado1 button{
+    background-color: transparent;
+    border: 0.125em solid var(--cor1);
+    border-radius: 0.9375em;
+    cursor: pointer;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 10px 25px;
+    outline: none;
+    padding: 1em 1em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+   }
+
+.Quadrado1 button a{
+    color: var(--cor5);
+    padding: 2em 4em;
+   }
+
+.Quadrado1 button:hover{
+    background-color: var(--cor1);
+}
+
+.Quadrado1 button a:hover{
+    color: var(--cor4);
+}
+
+.Quadrado2 .Quadrado-img{
+  background-image: url(Img/BannerJogos/Racer.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 150px;
+  margin: 1em 1em;
+}
+
+.Quadrado2 h2{
+  Color: var(--cor1);
+  font-size: 1.6rem;
+  font-family: var(--font2);
+  padding: 5px 0px 5px 0px;
+  text-align: center;
+}
+
+.Quadrado2 p{
+  color:  var(--cor1);
+  font-size: 16px;
+  text-align: justify;
+  padding: 10px;
+}
+
+.Quadrado2 button{
+  background-color: transparent;
+  border: 0.125em solid var(--cor1);
+  border-radius: 0.9375em;
+  cursor: pointer;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 10px 25px;
+  outline: none;
+  padding: 1em 1em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+ }
+
+.Quadrado2 button a{
+  color: var(--cor5);
+  padding: 2em 4em;
+ }
+
+.Quadrado2 button:hover{
+  background-color: var(--cor1);
+}
+
+.Quadrado2 button a:hover{
+  color: var(--cor4);
+}
+
+
+.Quadrado3 .Quadrado-img{
+  background-image: url(Img/BannerJogos/Traffic\ Racer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 150px;
+  margin: 1em 1em;
+}
+
+.Quadrado3 h2{
+  Color: var(--cor1);
+  font-size: 1.6rem;
+  font-family: var(--font2);
+  padding: 5px 0px 5px 0px;
+  text-align: center;
+}
+
+.Quadrado3 p{
+  color:  var(--cor1);
+  font-size: 16px;
+  text-align: justify;
+  padding: 10px;
+}
+
+.Quadrado3 button{
+  background-color: transparent;
+  border: 0.125em solid var(--cor1);
+  border-radius: 0.9375em;
+  cursor: pointer;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 10px 25px;
+  outline: none;
+  padding: 1em 1em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+ }
+
+.Quadrado3 button a{
+  color: var(--cor5);
+  padding: 2em 4em;
+ }
+
+.Quadrado3 button:hover{
+  background-color: var(--cor1);
+}
+
+.Quadrado3 button a:hover{
+  color: var(--cor4);
+}
